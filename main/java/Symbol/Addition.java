@@ -2,9 +2,6 @@ package Symbol;
 
 public class Addition extends Symbol{
 
-    public String name;
-    public int priority;
-    public Float NO;
     //设置符号名、优先级、序号
     public Addition(){
         this.setName("+");

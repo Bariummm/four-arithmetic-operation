@@ -1,32 +1,20 @@
 package Symbol;
 
-public class Symbol {
+public abstract class Symbol {
     public String name;
     public int priority;
     public Float NO;
     //设置符号名、优先级、序号
 
-    public String getName(){
-        return name;
-    }
+    public abstract String getName();
 
-    public void setName(String name){
-        this.name = name;
-    }
+    public abstract void setName(String name);
 
-    public int getPriority(){
-        return priority;
-    }
+    public abstract int getPriority();
 
-    public void setPriority(int priority){
-        this.priority = priority;
-    }
+    public abstract void setPriority(int priority);
 
-    public Float getNO(){
-        return NO;
-    }
+    public abstract Float getNO();
 
-    public void setNO(Float NO){
-        this.NO = NO;
-    }
+    public abstract void setNO(Float NO);
 }

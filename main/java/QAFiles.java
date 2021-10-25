@@ -10,19 +10,14 @@ public class QAFiles {
         try{
             File file = new File(File);
             FW = new FileWriter(file,false);
+            FW.write(txt);
+            FW.write("\r\n");
+            FW.flush();
+            FW.close();
         }catch (IOException e){
             e.printStackTrace();
         }
-        PrintWriter PW = new PrintWriter(FW);
-        PW.println(txt);
-        PW.flush();
-        try{
-            FW.flush();
-            PW.close();
-            FW.close();
-        } catch (IOException e){
-            e.printStackTrace();
-        }
+
     }
 
     public static List<String>readTo(String FilePath){
